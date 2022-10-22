@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="text-align: center; margin-top: 40px;">
+    <input id="searchInp" style="width: 50%; height: 5vh;" />
+    <button onclick="search()" style="width: 10%; height: 6vh; background-color: yellow;"> Search </button>
+    <div id="displayRes" style="display: flex; margin-left: auto; margin-right: auto; width: 40%; height: 20vh; box-shadow: 10px 10px 10px gray; display: none;">
+        <div>
+        <p> Name : <span id="name"> </span> </p>
+        <p> roll # : <span id="roll"> </span> </p>
+        <p> Result : <span id="result"> </span> </p>
+        <p> Marks : <span id="marks"> </span> </p>
+    </div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+    <table style="width: 50%;">
+    <thead style="height: 8vh;">
+        <tr>
+            <th> Name </th>
+            <th> Roll No </th>
+            <th> Status </th>
+        </tr>
+    </thead>
+    <tbody id="arrayTable">
+
+    </tbody>
+    </table>
+</div>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
